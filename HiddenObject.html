@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +9,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <section id="left">
-            <div id="Beach" ><img src="Background.png" alt="Beach"/></div>
+            <div id="container">
+                <img id="beach" src="Background.png" alt="beach" />
+                <input type="checkbox" id="btncanteen" />
+                <label for="btncanteen"><img class="img" id="canteen" src="Canteen.png" alt="canteen" /></label>
+                <input type="checkbox" id="btntent" />
+                <label for="btntent"><img class="img" id="tent" src="tent-2.png" alt="tent" /></label>
+                <input type="checkbox" id="btnsleepingbag" />
+                <label for="btnsleepingbag"><img class="img" id="sleeping-bag" src="Sleeping_bag-1.png"
+                        alt="sleeping bag" /></label>
+                <input type="checkbox" id="btnmulti-tool" />
+                <label for="btnmulti-tool"><img class="img" id="multi-tool" src="Multitool-1.png"
+                        alt="multi-tool" /></label>
+                <input type="checkbox" id="btnwater-purifier" />
+                <label for="btnwater-purifier"><img class="img" id="water-purifier" src="Iodine.png"
+                        alt="water-purifier" /></label>
+            </div>
         </section>
         <section id="right">
             <h1>Help! I'm Lost!</h1>
             <p>
-                It's beautiful here, but I don't know how to get home! It's a shame about all the rubbish, but maybe it will come in handy! Can you find five things to help me survive the night?
+                It's beautiful here, but I don't know how to get home! It's a shame about all the rubbish, but maybe it
+                will come in handy!</p>
+            <p><b><i>Can you find five things to help me survive the night?</i></b>
             </p>
-            <p>Once you've spotted them, mouse over them to pick them up.</p>
-            <p>
-                If you're not sure what an item looks like, click the item in the list
-                below:
+            <br />
+            <p>Once you've spotted an item, click to pick it up. If you're not sure what something looks like,
+                click the item name below:
             </p>
-            <ul>
-                <li class="item description"><a href="Canteen.png">Canteen</a></li>
-                <li class="item description"><a href="tent-2.png">Tent</a></li>
-                <li class="item description"><a href="Sleeping_bag-1.png">Sleeping Bag</a></li>
-                <li class="item description"><a href="Multitool-1.png">Multi-tool</a></li>
-                <li class="item description"><a href="Iodine.png">Water purifier</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li class="item"><a href="Canteen.png" target="_blank">Canteen</a></li>
+                    <li class="item"><a href="tent-2.png" target="_blank">Tent</a></li>
+                    <li class="item"><a href="Sleeping_bag-1.png" target="_blank">Sleeping Bag</a></li>
+                    <li class="item"><a href="Multitool-1.png" target="_blank">Multi-tool</a></li>
+                    <li class="item"><a href="Iodine.png" target="_blank">Water-purifier</a></li>
+                </ul>
+            </nav>
+
         </section>
     </main>
-    
-</body>
-</html>
-<!--
-    <main>
-        <div id="left">
-            <img src="Background.png" alt="Beach"/>
-            <img src="Canteen.png" alt="Canteen" style="width: 100px;" />
-            <img id="Tent" src="tent-2.png" alt="Tent" style="width: 200px;"/>
-            <img id="Sleeping bag" src="Sleeping_bag-1.png" alt="Sleeping Bag" style="width: 200px;" />
-            <img id="Multi-tool" src="Multitool-1.png" alt="Multi-tool" style="width: 200px;"/>
-            <img id="Water-purifier" src="Iodine.png" alt="Water purifier" style="width: 200px;"/>
-        </div>
-            
-        
-        <section id="right">
-            <h1>Help! I'm Lost!</h1>
-            <p>
-                It's beautiful here (despite the rubbish), but I don't know how to get home! Maybe the rubbish will
-                come in handy! Can you find five things to help me survive?
-            </p>
-            <p>Once you've spotted them, mouse over them to pick them up.</p>
-            <p>
-                If you're not sure what an item looks like, click the item in the list
-                below:
-            </p>
-            <ul>
-                <li class="item description"><a href="Canteen.png">Canteen</a></li>
-                <li class="item description"><a href="tent-2.png">Tent</a></li>
-                <li class="item description"><a href="Sleeping_bag-1.png">Sleeping Bag</a></li>
-                <li class="item description"><a href="Multitool-1.png">Multi-tool</a></li>
-                <li class="item description"><a href="Iodine.png">Water purifier</a></li>
-            </ul>
-        </section>
-    </main>
+    <footer>
+        <fieldset>
+            <form action="mailto:m.ellistonboyes@gmail.com" method="post">
+                <!-- <div id="Reviewer"><label>Name: </label><input type="text"  name="name" /><br/></div> -->
+                <label style="font-weight: 400;">Leave us a review!</label>
+                <input type="radio" id="1 star" name="review" value="1 star" /><label class="star" for="1 star">1
+                    star</label>
+                <input type="radio" id="2 stars" name="review" value="2 stars" /><label class="star" for="2 stars">2
+                    stars</label>
+                <input type="radio" id="3 stars" name="review" value="3 stars" /><label class="star" for="3 stars">3
+                    stars</label>
+                <input type="radio" id="4 stars" name="review" value="4 stars" /><label class="star" for="4 stars">4
+                    stars</label>
+                <input type="radio" id="5 stars" name="review" value="5 stars" /><label class="star" for="5 stars">5
+                    stars</label>
+                <label>Comment:</label>
+                <textarea></textarea>
+                <input type="submit" Value="submit" />
+            </form>
+        </fieldset>
+    </footer>
+
 </body>
 
-</html> -->
+</html>
