@@ -133,44 +133,31 @@ main {
 }
 
 h1 {
-    display: flex;
-    align-self: center;
-    text-align: center;
     font-size: 12vh;
     letter-spacing: 1px;
     margin-bottom: 2vh;
-    margin-top: 0vh;
+    margin-top: 0vh
 }
 
 p {
-    align-self: center;
     font-size: 3vh;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
     margin-bottom: 1vh;
     text-align: center;
 }
 
-nav>ul {
+ul {
     display: flex;
     padding: 0;
-}
-
-nav {
-    align-self: center;
-    justify-items: space-between
 }
 
 a {
     font-size: 3vh;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: italic;
     color: white;
-
 }
 
 .item {
@@ -284,14 +271,12 @@ screen and (min-height:50vw) {
     #right {
         width: 100%;
         height: 30%;
-        padding-right: 5%;
         padding-left: 5%;
 
     }
 
     h1 {
         font-size: 12vw;
-        letter-spacing: 1px;
         margin-top: 10vw;
     }
 
@@ -299,7 +284,7 @@ screen and (min-height:50vw) {
         font-size: 4vw;
     }
 
-    nav>ul {
+    ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -314,11 +299,6 @@ screen and (min-height:50vw) {
         font-size: 4vw;
     }
 
-    .item:hover {
-        color: white;
-        cursor: pointer;
-    }
-
     form {
         display: block;
     }
@@ -328,10 +308,6 @@ screen and (min-height:50vw) {
         margin-top: 2vw;
         margin-bottom: 2vw;
         height: 2vw;
-    }
-
-    input[type=radio]:hover {
-        cursor: pointer;
     }
 
     label {
