@@ -11,12 +11,12 @@ body {
 main {
     display:flex;
     flex-flow: row;
+    height:100%;
     
 }
 
 #left {
     display:flex;
-    flex-flow: column wrap;
     width:50vw;
     height: 100vh;
     justify-content: center;
@@ -26,9 +26,7 @@ main {
 #container {
     display:flex;
     justify-self: flex-start;
-    max-height: 90%;
-    max-width: 90vh;
-    padding: 5%;
+    margin: 10%;
     position: relative;
 }
 
@@ -39,8 +37,8 @@ main {
 #canteen {
     position: absolute;
     width: 10%;
-    top: 16.4%;
-    left: 19.5%;
+    top: 12.1%;
+    left: 16.3%;
 }
 
 #btncanteen, #btntent, #btnsleepingbag, #btnmulti-tool, #btnwater-purifier {
@@ -50,7 +48,7 @@ main {
 #btncanteen:checked + label > img {
     /* filter: brightness(00%); */
     /* opacity: 0; */
-    left: 122%;
+    left: 130%;
     top: 83%;
     width: 8%;
     transition: 1s;
@@ -63,12 +61,12 @@ main {
 #tent {
     position: absolute;
     width: 14%;
-    top: 47%;
-    left: 36%;
+    top: 48%;
+    left: 34%;
 }
 
 #btntent:checked + label > img {
-    left: 141%;
+    left: 147%;
     top: 83%;
     width: 8%;
     transition: 1s;
@@ -77,12 +75,12 @@ main {
 #sleeping-bag {
     position: absolute;
     width: 11%;
-    top: 50%;
-    left: 51%;
+    top: 52%;
+    left: 50.9%;
 }
 
 #btnsleepingbag:checked + label > img {
-    left: 159%;
+    left: 164%;
     top: 83%;
     width: 8%;
     transition: 1s;
@@ -91,12 +89,12 @@ main {
 #multi-tool {
     position: absolute;
     width: 8%;
-    top: 67.5%;
-    left: 70%;
+    top: 70.5%;
+    left: 73%;
 }
 
 #btnmulti-tool:checked + label > img {
-    left: 177%;
+    left: 181%;
     top: 83%;
     width: 8%;
     transition: 1s;
@@ -106,12 +104,12 @@ main {
 #water-purifier {
     position: absolute;
     width: 10%;
-    top: 68%;
-    left: 30%;
+    top: 71.2%;
+    left: 28.3%;
 }
 
 #btnwater-purifier:checked + label > img {
-    left: 196%;
+    left: 198%;
     top: 83%;
     width: 8%;
     transition: 1s;
@@ -152,7 +150,7 @@ p {
 
 nav>ul {
     display:flex;
-    padding-right: 40px;
+    padding: 0;
 }
 
 nav {
@@ -238,7 +236,7 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1123px) {
+@media screen and (max-width: 768px), screen and (min-height:50vw) {
     main {
         flex-direction: column-reverse;
     }
@@ -250,30 +248,30 @@ input[type=submit]:hover {
     
     #btncanteen:checked + label > img {
         left: 10%;
-        top: -25px;
+        top: -15%;
         width: 8vw;
     }
     
     #btntent:checked + label > img {
         left: 28%;
-        top: -25px;
+        top: -15%;
         width: 8vw;
     }
     #btnsleepingbag:checked + label > img {
         left: 46%;
-        top: -25px;
+        top: -15%;
         width: 8vw;
     }
      
     #btnmulti-tool:checked + label > img {
         left: 64%;
-        top: -25px;
+        top: -15%;
         width: 8vw;
     }
     
     #btnwater-purifier:checked + label > img {
         left: 82%;
-        top: -25px;
+        top: -15%;
         width: 8vw;
     }
     
@@ -287,21 +285,20 @@ input[type=submit]:hover {
     }
     
     h1 {
-        font-size: 50px;
+        font-size: 12vw;
         letter-spacing: 1px;
-        margin-bottom: 10px;
-        margin-top:30px;
+        margin-top:10vw;
     } 
     
     p {
-        font-size: 12px;
+        font-size: 4vw;
     }
     
     nav>ul {
         display:flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 5vw;
     }
     
     nav {
@@ -309,7 +306,7 @@ input[type=submit]:hover {
     }
     
     a {
-        font-size: 12px;
+        font-size: 4vw;
     }
     
     .item:hover {
@@ -319,13 +316,13 @@ input[type=submit]:hover {
     
     form {
         /* display: none; */
-        display:flex;
-        flex-direction: column;
-        align-items: flex-start;
+        display:block;
     }
     
     input[type=radio] {
         margin-left: 2vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
 
     }
     
@@ -334,22 +331,22 @@ input[type=submit]:hover {
     }
     
     label {
-        margin-right: 1vw;
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 3vw;
+
     }
     
     textarea {
-        font-size: 12px;
+        font-size: 4vw;
         height: 12px;
-        padding-bottom: 2px;
+        min-height: 3vw;
     }
-        
-    
+
     input[type=submit] {
-        font-size: 12px;
+        font-size: 3vw;
         width: 20%;
         margin-left:2vw;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
     }
     
 }
