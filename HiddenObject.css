@@ -339,7 +339,7 @@ screen and (min-height:50vw) {
     }
 
     textarea {
-        font-size: 4vw;
+        font-size: 2vw;
         height: 12px;
         min-height: 3vw;
     }
